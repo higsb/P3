@@ -408,6 +408,14 @@ void	Roster::ShowAllMemberships(ostream& stream)
 	//************************************************************************************
 	//	EXECUTABLE STATEMENTS
 	//	COMPLETE THE FUNCTION HERE.
+    
+    map<int, StringVector>::iterator itr;
+    if()    {
+        
+    }
+    else    {
+        
+    }
 
 	return;
 }
