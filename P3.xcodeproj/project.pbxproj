@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9872DACE1E9B3E8000A3EA8E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9872DACD1E9B3E8000A3EA8E /* main.cpp */; };
+		98B91BE71E9DEE3E006ECD7E /* Roster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98B91BE31E9DEE3E006ECD7E /* Roster.cpp */; };
+		98B91BE81E9DEE3E006ECD7E /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98B91BE41E9DEE3E006ECD7E /* Main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,10 @@
 
 /* Begin PBXFileReference section */
 		9872DACA1E9B3E8000A3EA8E /* P3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = P3; sourceTree = BUILT_PRODUCTS_DIR; };
-		9872DACD1E9B3E8000A3EA8E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		98B91BE31E9DEE3E006ECD7E /* Roster.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Roster.cpp; sourceTree = "<group>"; };
+		98B91BE41E9DEE3E006ECD7E /* Main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Main.cpp; sourceTree = "<group>"; };
+		98B91BE51E9DEE3E006ECD7E /* roster_in.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = roster_in.txt; sourceTree = "<group>"; };
+		98B91BE61E9DEE3E006ECD7E /* Roster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Roster.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +61,10 @@
 		9872DACC1E9B3E8000A3EA8E /* P3 */ = {
 			isa = PBXGroup;
 			children = (
-				9872DACD1E9B3E8000A3EA8E /* main.cpp */,
+				98B91BE31E9DEE3E006ECD7E /* Roster.cpp */,
+				98B91BE41E9DEE3E006ECD7E /* Main.cpp */,
+				98B91BE51E9DEE3E006ECD7E /* roster_in.txt */,
+				98B91BE61E9DEE3E006ECD7E /* Roster.h */,
 			);
 			path = P3;
 			sourceTree = "<group>";
@@ -118,7 +125,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9872DACE1E9B3E8000A3EA8E /* main.cpp in Sources */,
+				98B91BE81E9DEE3E006ECD7E /* Main.cpp in Sources */,
+				98B91BE71E9DEE3E006ECD7E /* Roster.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +247,7 @@
 				9872DAD31E9B3E8000A3EA8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
