@@ -61,6 +61,8 @@ class	Roster
 		bool	StoreMemberships(const string& fileName);
 
 	private:
+    
+    map<int,StringVector > members;
 };
 
 //****************************************************************************************

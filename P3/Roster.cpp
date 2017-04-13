@@ -5,6 +5,7 @@
 //****************************************************************************************
 #include	<fstream>
 #include	<iostream>
+#include    <string>
 
 #include	"Roster.h"
 
@@ -330,7 +331,7 @@ bool	Roster::LoadMemberships(const string& fileName)
 			if (success)
 			{
 				//	COMPLETE THE ROSTER LOADING HERE.
-                members.insert(pair<int, StringVector>(members.size()+1, fieldVector)
+                members.insert(pair<int, StringVector>(members.size()+1, fieldVector));
 			}
 			else
 			{
@@ -373,7 +374,7 @@ bool	Roster::RemoveMembership(const string& id)
     bool found = false;
     bool run = true;
     
-    while() {
+    while(run) {
         run = false;
         for (itr = members.begin(); itr != members.end(); itr ++)   {
             StringVector v = itr->second;
@@ -410,7 +411,7 @@ void	Roster::ShowAllMemberships(ostream& stream)
 	//	COMPLETE THE FUNCTION HERE.
     
     map<int, StringVector>::iterator itr;
-    if(member.size() == 0)    {
+    if(members.size() == 0)    {
         stream << "empty";
     }
     else    {
@@ -452,7 +453,7 @@ bool	Roster::ShowOneMembership(ostream& stream, const string& id)
     for(itr = members.begin(); itr != members.end(); itr++) {
         StringVector v = itr->second;
         
-        if(v[idIdex] == id)  {
+        if(v[idIndex] == id)  {
             found = true;
             stream << v[idIndex];
             
@@ -484,6 +485,9 @@ bool	Roster::StoreMemberships(const string& fileName)
 	//************************************************************************************
 	//	EXECUTABLE STATEMENTS
 	//	COMPLETE THE FUNCTION HERE. MAKE SURE IT RETURNS THE CORRECT STATUS EVERYWHERE.
+    ofstream out(fileName.c_str(), ios::out);
+    ShowAllMemberships(out);
+    out.close();
 
-	return(false);
+	return(true);
 }
