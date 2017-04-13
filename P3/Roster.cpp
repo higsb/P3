@@ -452,9 +452,9 @@ bool	Roster::ShowOneMembership(ostream& stream, const string& id)
     for(itr = members.begin(); itr != members.end(); itr++) {
         StringVector v = itr->second;
         
-        if(v[index] == id)  {
+        if(v[idIdex] == id)  {
             found = true;
-            stream << v[index];
+            stream << v[idIndex];
             
             for (unsigned i = 1; i < v.size(); i++) {
                 stream << "\t"<< v[i];
