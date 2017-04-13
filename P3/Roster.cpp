@@ -419,7 +419,7 @@ void	Roster::ShowAllMemberships(ostream& stream)
             stream << itr->second[idIndex];
             
             for(unsigned i = 1; i < itr->second.size(); i++)   {
-                stream << "/t" << itr->second[i];
+                stream << "\t" << itr->second[i];
             }
             stream << endl;
         }
@@ -464,7 +464,7 @@ bool	Roster::ShowOneMembership(ostream& stream, const string& id)
         }
     }
 
-	return(true);
+	return found;
 }
 
 //****************************************************************************************
