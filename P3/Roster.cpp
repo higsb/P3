@@ -387,7 +387,7 @@ bool	Roster::RemoveMembership(const string& id)
         }
     }
 
-	return(true);
+	return(found);  //delete
 }
 
 //****************************************************************************************
@@ -410,11 +410,18 @@ void	Roster::ShowAllMemberships(ostream& stream)
 	//	COMPLETE THE FUNCTION HERE.
     
     map<int, StringVector>::iterator itr;
-    if()    {
-        
+    if(member.size() == 0)    {
+        stream << "empty";
     }
     else    {
-        
+        for (itr = members.begin(); itr != members.end(); itr++)    {
+            stream << itr->second[idIndex];
+            
+            for(unsigned i = 1; i < itr->second.size(); i++)   {
+                stream << "/t" << itr->second[i];
+            }
+            stream << endl;
+        }
     }
 
 	return;
